@@ -1,0 +1,28 @@
+{
+  "name": "galleryproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalSteam/GalleryProxy.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "jest"
+  ],
+  "author": "Xizhou Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DigitalSteam/GalleryProxy/issues"
+  },
+  "homepage": "https://github.com/DigitalSteam/GalleryProxy#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
