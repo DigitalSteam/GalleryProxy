@@ -1,13 +1,14 @@
-#Info {
-  display: block;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-#CountDown {
-  margin-left: 5px;
-  display: inline-block;
+#MoreLikeThis {
+  display: flex;
+  justify-content: center;
 }
 
-#Related {
-  margin: 10%;
-  display: block;
+#AddToCart {
+  display: flex;
+  justify-content: center;
 }

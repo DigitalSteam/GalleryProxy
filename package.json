@@ -1,10 +1,11 @@
 {
   "name": "galleryproxy",
   "version": "1.0.0",
-  "description": "",
+  "description": "The proxy server",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/DigitalSteam/GalleryProxy#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "request": "^2.87.0"
   }
 }
