@@ -28,16 +28,15 @@ app.get('/api/games/:1/more-games', (req, res) => {
   });
 });
 
-app.get('/api/games/:gameId/review', (req, res) => {
-  request.get('http://ec2-54-215-135-38.us-west-1.compute.amazonaws.com/api/games/:gameId/review', (err, response, body) => {
-    console.log(body);
+app.get('/api/game/:2/review', (req, res) => {
+  request.get('http://ec2-54-215-135-38.us-west-1.compute.amazonaws.com/api/game/:2/review', (err, response, body) => {
     res.send(body);
   });
 });
 
 app.get('/api/user/:userId', (req, res) => {
-  request.get('http://ec2-54-215-135-38.us-west-1.compute.amazonaws.com/api/user/:userId', (err, response, body) => {
-    console.log(body);
+  let user = req.params.userId.replace(/[^0-9.]/g, "");
+  request.get(`http://ec2-54-215-135-38.us-west-1.compute.amazonaws.com/api/user/:${user}`, (err, response, body) => {
     res.send(body);
   });
 });
